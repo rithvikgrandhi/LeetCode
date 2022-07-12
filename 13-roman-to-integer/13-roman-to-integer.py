@@ -1,6 +1,6 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
-        hashmap = {
+        dic = {
             "I"  :   1,
             "V"  :   5,
             "X"  :   10,
@@ -12,9 +12,9 @@ class Solution:
         
         ans = 0
         for i in range(1,len(s)):
-            if hashmap[s[i]] > hashmap[s[i-1]]:
-                ans -= hashmap[s[i-1]]
+            if dic[s[i]] > dic[s[i-1]]:
+                ans -= dic[s[i-1]]
             else:
-                ans += hashmap[s[i-1]]
-        ans += hashmap[s[-1]]
+                ans += dic[s[i-1]]
+        ans += dic[s[-1]]
         return ans
