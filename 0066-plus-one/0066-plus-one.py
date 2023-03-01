@@ -8,12 +8,13 @@ class Solution:
         
         strnum=int(strnum)+1
         
-        digits2=[]
+        
+        digits.clear()
         while strnum:
             
-            digits2.append(strnum%10)
+            digits.append(strnum%10)
             strnum=strnum//10
             
 
-        digits2.reverse()
-        return digits2
+        digits.reverse()
+        return digits
