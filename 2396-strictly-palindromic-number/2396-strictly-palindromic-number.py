@@ -15,4 +15,5 @@ class Solution:
             if str(num1)!=reversed(str(num1)):
                 return False
             continue
+            
         return True
