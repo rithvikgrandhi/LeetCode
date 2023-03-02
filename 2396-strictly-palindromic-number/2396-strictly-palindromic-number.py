@@ -11,7 +11,7 @@ class Solution:
             while n:
 
                 num1=num1*10+n%i
-                n=n//2
+                n=n//i
             if str(num1)!=reversed(str(num1)):
                 return False
             continue
