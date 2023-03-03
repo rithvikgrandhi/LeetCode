@@ -23,8 +23,4 @@ class Solution:
         
         if flag:
             return arr1[val]
-        return -1        
-
-                
-
-                
+        return -1          
