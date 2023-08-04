@@ -9,6 +9,7 @@ public:
 
         if(i<word1.length()){
             res+=word1[i];
+            
         }
 
         if(i<word2.length()){
