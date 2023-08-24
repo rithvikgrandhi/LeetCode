@@ -4,12 +4,9 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         
-        for i in nums:
-            
-            if i==0:
-                
-                nums.remove(i)
+        for i in range(len(nums)):
+            if nums[i]==0:
+                nums.remove(nums[i])
                 nums.append(0)
-                
-        return nums
+
         
